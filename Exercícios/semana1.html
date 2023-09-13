@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let nomes = ["Davi","João","Nicolas","Saulo"];
+        console.log(nomes.join());
+
+        let lista = [
+        {"descricao":"Estudar JS", "local":"IFMG", "hora":"21:00"},
+        {"descricao":"Atividade JS", "local":"casa", "hora":"20:00"},
+        {"descricao":"Ler livro de JS", "local":"casa", "hora":"08:00"}
+        ]
+
+        function addLista (descricao, local, hora) {
+            let novoElemento = {"descricao":descricao, "local":local, "hora":hora};
+            lista.push(novoElemento);
+            console.log(lista);
+        }
+
+    </script>
+</body>
+</html>

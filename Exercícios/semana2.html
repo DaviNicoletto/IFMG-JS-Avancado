@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<label>Digite seu nome:</label>
+<input id="nome">
+<button id="enviar">Enviar</button>
+<p id="nomeUser">-----</p>
+
+    <script>
+        document.getElementById("enviar").addEventListener("click", alertar)
+        
+        function alertar(){
+            let nome = document.getElementById("nome").value;
+            // alert("Olá, "+ nome + "!");
+
+            document.getElementById("nomeUser").innerHTML = "<b>Nome digitado: </b>" + nome;
+        }
+    </script>
+
+</body>
+</html>
